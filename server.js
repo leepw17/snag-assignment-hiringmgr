@@ -30,20 +30,14 @@ const applications = require('./routes/application');
 app.use('/api/application', applications);
 
 // Angular DIST output folder
-app.use(express.static(path.join(__dirname, 'dist/snag-assignment')));
-//app.use(express.static(path.join(__dirname, 'dist')));
+//app.use(express.static(path.join(__dirname, 'dist/snag-assignment')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Send all other requests to the Angular app
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/snag-assignment/index.html'));
-    //res.sendFile(path.join(__dirname, 'dist/index.html'));
+    //res.sendFile(path.join(__dirname, 'dist/snag-assignment/index.html'));
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
-
-/*app.get('/', (req, res) =>{
-  res.send('Invalid endpoint');
-})*/
-
-
 
 // Start server
 app.listen(port, () => {
