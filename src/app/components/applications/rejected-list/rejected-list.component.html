@@ -1,0 +1,19 @@
+<br/>
+<div class="container">
+  <h2>Rejected applications</h2>
+  <br/>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Candidate</th>
+        <th class="center" scope="col">View</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let application of applications, let in = index">
+        <td style="width: 70%">{{ application.name }}</td>
+        <td class="center"><button class="btn btn-primary" [routerLink]="['/applications/application', application._id]">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,22 @@
+<br/>
+<div class="container">
+  <h2>Active questions</h2>
+  <br/>
+  <a href="javascript:void(0)" [routerLink]="['/questions/form']">+ Add question</a>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Question</th>
+        <th class="center" scope="col">Edit</th>
+        <th class="center" scope="col">Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let question of questions, let in = index">
+        <td style="width: 70%">{{ question.question }}</td>
+        <td class="center"><button class="btn btn-primary" [routerLink]="['/questions/form', question._id]">Edit</button></td>
+        <td class="center"><button class="btn btn-danger" (click)="removeQuestion(question, in)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

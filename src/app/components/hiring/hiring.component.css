@@ -1,0 +1,9 @@
+.breadcrumb-nav ol{
+  background-color: #fff !important;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.breadcrumb-nav ol li{
+  font-size: 0.85rem !important;
+}

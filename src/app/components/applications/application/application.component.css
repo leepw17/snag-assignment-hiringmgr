@@ -1,0 +1,13 @@
+.main-container{
+  width: 80%;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.radio-container{
+  padding-left: 75px;
+}
+
+.btn{
+  margin: 5px;
+}

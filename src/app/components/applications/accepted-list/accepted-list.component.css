@@ -1,0 +1,9 @@
+.main-container{
+  width: 80%;
+  max-width: 800px;
+  padding: 10px;
+}
+
+td.center, th.center{
+  text-align: center;
+}

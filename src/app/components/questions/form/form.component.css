@@ -1,0 +1,9 @@
+.main-container{
+  width: 80%;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.btn{
+  margin: 0px 5px;
+}
