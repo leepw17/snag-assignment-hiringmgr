@@ -20,7 +20,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HiringComponent } from './components/hiring/hiring.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'hiring', component: HiringComponent },
   { path: 'questions/form', component: FormComponent },
   { path: 'questions/form/:id', component: FormComponent },

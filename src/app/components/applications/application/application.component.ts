@@ -81,7 +81,7 @@ export class ApplicationComponent implements OnInit {
 
     this.applicationService.addApplication(answerSubmission).subscribe(data => {
       if(data.success){
-        this.router.navigate(['/home']);
+        this.router.navigate(['']);
       }
       else{
         console.log(data);
@@ -117,7 +117,7 @@ export class ApplicationComponent implements OnInit {
       this.router.navigate(['/hiring']);
     }
     else{
-      this.router.navigate(['/home']);
+      this.router.navigate(['']);
     }
   }
 
